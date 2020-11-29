@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!--Navigation Drawer Icon design Sizes-->
+    <dimen name="design_navigation_icon_size" tools:override="true">24dp</dimen>
+    <dimen name="design_navigation_icon_padding" tools:override="true">10dp</dimen>
+    <dimen tools:override="true" name="design_navigation_separator_vertical_padding">20dp</dimen>
+
+<!--Font Sizes-->
+    <dimen name="font_extreme_small">9sp</dimen>
+    <dimen name="font_extra_small">10sp</dimen>
+    <dimen name="font_s">11sp</dimen>
+    <dimen name="font_m">12sp</dimen>
+    <dimen name="font_l">13sp</dimen>
+    <dimen name="font_xl">14sp</dimen>
+    <dimen name="font_xxl">15sp</dimen>
+    <dimen name="font_xxxl">16sp</dimen>
+    <dimen name="font_huge">18sp</dimen>
+    <dimen name="font_big">20sp</dimen>
+    <dimen name="font_extra">22sp</dimen>
+    <dimen name="font_extreme">24sp</dimen>
+
+</resources>

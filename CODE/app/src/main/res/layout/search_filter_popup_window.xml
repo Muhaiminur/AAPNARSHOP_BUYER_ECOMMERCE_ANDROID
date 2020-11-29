@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+>
+
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="40dp"
+    app:srcCompat="@drawable/popup_holder_background"
+    android:background="@color/cardview_shadow_end_color"
+    android:layout_gravity="center_horizontal"
+    android:scaleType="centerCrop"
+    cardview:ignore="PrivateResource" />
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/filter_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="15dp"
+    cardview:cardElevation="15dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/app_yellow"
+    app:contentPadding="1dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/search_filter_rating"
+                android:background="@drawable/rounded_corners_rating_button"
+                android:layout_height="30dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                android:text="@string/text_search_rating"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/search_filter_offer"
+                android:background="@drawable/rounded_corner"
+                android:layout_height="30dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textColor="@color/black"
+                android:text="@string/text_search_offer"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:background="@drawable/spinner_popup_new"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/search_filter_spinner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:theme="@style/spinnerTheme_search"/>
+
+    </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/search_filter_apply"
+            android:background="@drawable/rounded_corner"
+            android:layout_height="30dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/text_search_apply"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</FrameLayout>

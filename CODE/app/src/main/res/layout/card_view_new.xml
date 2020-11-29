@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_new"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/OrderItemName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pran Sorisar Oil"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:scrollHorizontally="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_s"/>
+            <TextView
+                android:id="@+id/OrderItemCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="x6"
+                android:layout_weight="0.3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_s"/>
+
+            <TextView
+                android:id="@+id/OrderItemPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:text="120"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_s"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="top"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/drawer_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/drawer"
+            app:tint="@color/black" />
+        <ImageView
+            android:id="@+id/back_arrow_dashboard"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            android:visibility="gone"
+            app:tint="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/font_huge"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/dashboard_title"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="70dp"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

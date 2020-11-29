@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="top"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/drawer_logo_store_homepage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/drawer"
+            app:tint="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/shop_name_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="start"
+                android:textSize="@dimen/font_huge"
+                android:text="Rahamat General Store"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/shop_address_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_s"
+                android:layout_gravity="start"
+                android:textColor="@color/app_yellow"
+                android:textStyle="bold"
+                android:text="Grocery Shop, Banani Road 02, Dhaka"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

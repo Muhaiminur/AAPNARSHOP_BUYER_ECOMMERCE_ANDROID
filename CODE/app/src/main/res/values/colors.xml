@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="dashboard_color">#2a2a2a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_hint">#c5c5c5</color>
+    <color name="theme_color">#fbbb41</color>
+    <color name="link_text">#ff0000ff</color>
+    <color name="background_theme">#ffb6c1</color>
+    <color name="background_shape">#FFF3E3</color>
+    <color name="app_yellow">#fec107</color>
+    <color name="app_yellow3">#FF9800</color>
+    <color name="app_yellow2">#F6E8BC</color>
+    <color name="text_red">#FF0000</color>
+    <color name="green">#4CAF50</color>
+    <color name="today_calendar">#4b82ff</color>
+    <color name="cart_background_blue">#000080</color>
+    <color name="link_color_signin">#1453ff</color>
+
+
+</resources>

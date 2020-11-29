@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/app_toolbar"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/toolbarDashboard"
+        layout="@layout/toolbar_dashboard"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/toolbarNotification"
+        layout="@layout/toolbar_notification"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/toolbarStoreHomepage"
+        layout="@layout/toolbar_store_homepage"
+        android:visibility="gone" />
+
+    <include layout="@layout/content_dashboard" />
+
+</LinearLayout>

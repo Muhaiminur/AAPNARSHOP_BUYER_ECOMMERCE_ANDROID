@@ -1,0 +1,248 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="20dp"
+            android:baselineAligned="false">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/ic_star"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/shop_rating_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold"
+                    android:text="4.1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/shop_rating_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:text="(50+)"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_s"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="2dp"
+                android:text="@string/minimum_buy_text"/>
+
+            <TextView
+                android:id="@+id/store_minimum_buy_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_s"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="150BDT"
+                android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_m"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="2dp"
+                android:text="@string/opening_hour_text"/>
+
+            <TextView
+                android:id="@+id/store_opening_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_m"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="9.00AM-11.00PM"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2"
+                android:background="@drawable/search_bar_background"
+                tools:ignore="UselessParent">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/order_search_by_order_no_text"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/font_xl"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.2"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dp"
+                    android:background="@drawable/circle_background_icon"
+                    app:srcCompat="@drawable/ic_search_bar"
+                    app:tint="@color/black" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_s"
+                android:textStyle="bold"
+                android:textColor="@color/app_yellow"
+                android:layout_marginEnd="2dp"
+                android:text="@string/average_delivery_time_text"/>
+
+            <TextView
+                android:id="@+id/store_average_delivery_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_s"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="30MIN"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_s"
+                android:textStyle="bold"
+                android:textColor="@color/app_yellow"
+                android:layout_marginEnd="2dp"
+                android:text="@string/delivery_charge_text"/>
+
+            <TextView
+                android:id="@+id/store_delivery_charge_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_s"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="30BDT"
+                android:layout_marginEnd="5dp"/>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:minHeight="?actionBarSize"
+            app:tabGravity="fill"
+            app:tabIndicator="@null"
+            style="@style/MyCustomTabLayout"
+            app:tabBackground="@drawable/tabs_background"
+            app:tabTextColor="@color/black"
+            android:layout_marginBottom="5dp"
+            app:tabMode="fixed">
+        </com.google.android.material.tabs.TabLayout>
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

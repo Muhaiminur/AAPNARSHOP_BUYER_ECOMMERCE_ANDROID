@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  res/drawable/rounded_edittext.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item><layer-list>
+        <item >
+            <shape
+                android:shape="rectangle"
+                android:padding="10dp">
+
+                <solid android:color="@color/white" />
+                <stroke
+                    android:width="0dip"
+                    android:color="@color/black" />
+                <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+
+
+            </shape></item>
+
+        <item android:gravity="end" android:drawable="@drawable/ic_spinner"/>
+
+    </layer-list></item>
+
+</selector>

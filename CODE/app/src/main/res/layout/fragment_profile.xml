@@ -1,0 +1,205 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:fillViewport="true">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context=".fragment.ProfileFragment"
+    android:background="@color/white"
+    android:layout_marginTop="5dp">
+
+    <FrameLayout
+        android:id="@+id/profile_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/buyer_profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:layout_margin="3dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/profile_icon_sample"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="1dp" />
+
+    <ImageView
+        android:id="@+id/profile_image_edit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_plus" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_name"
+        android:textSize="@dimen/font_m"
+        android:layout_weight="0.2"
+        />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_m"
+            android:layout_weight="0.78"
+            android:importantForAutofill="no"
+            android:enabled ="false"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_mobile"
+            android:textSize="@dimen/font_m"
+            android:layout_weight="0.2"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_mobile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_m"
+            android:importantForAutofill="no"
+            android:enabled ="false"
+            android:layout_weight="0.82"
+            android:inputType="phone"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_email"
+            android:textSize="@dimen/font_m"
+            android:layout_weight="0.2"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_email"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="0.75"
+            android:textSize="@dimen/font_m"
+            android:importantForAutofill="no"
+            android:enabled ="false"
+            android:inputType="textEmailAddress"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="end"
+    android:gravity="end">
+
+    <Button
+        android:id="@+id/profile_settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:text="@string/text_settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_xl"
+        android:background="@drawable/login_signin_button_background"
+        />
+
+    <Button
+        android:id="@+id/profile_update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:text="@string/profile_update_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_xl"
+        android:background="@drawable/login_signin_button_background"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/profile_buyer_address"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        android:textSize="@dimen/font_m"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        />
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView >

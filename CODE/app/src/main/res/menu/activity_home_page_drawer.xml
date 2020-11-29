@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_icon_navbar"
+            app:showAsAction="ifRoom"
+            android:title="@string/text_navbar_home" />
+        <item
+            android:id="@+id/nav_order"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_order_icon_navbar"
+            android:title="@string/text_navbar_order" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_notification_icon_navbar"
+            app:showAsAction="ifRoom"
+            android:title="@string/text_navbar_notification" />
+        <item
+            android:id="@+id/nav_profile"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_profile_icon_navbar"
+            android:title="@string/text_navbar_profile" />
+        <!--<item
+            android:id="@+id/nav_settings"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_settings_logo"
+            android:title="@string/text_settings" />-->
+        <item
+            android:id="@+id/nav_logout"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/ic_logout_icon_navbar"
+            android:title="@string/text_navbar_logout" />
+
+
+    </group>
+
+    <group android:id="@+id/dummy">
+        <item
+            android:id="@+id/nav_language"
+            app:showAsAction="ifRoom"
+            android:title="@string/text_navbar_language"
+            app:actionLayout="@layout/navbar_language_switch"
+            />
+
+    </group>
+
+</menu>

@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/edit_text_shadow" />
+
+    <item
+        android:bottom="2px"
+        android:drawable="@drawable/edit_text_round" />
+</layer-list>

@@ -1,0 +1,444 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context=".fragment.CartFragment"
+    android:background="@color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerViewCartProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/cart_order_details_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_xl"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/ic_location"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/app_name"
+                     />
+
+                <TextView
+                    android:id="@+id/cart_user_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="House Skyview Road, Chattogram"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/ic_phone_icon" />
+
+                <TextView
+                    android:id="@+id/cart_user_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0167666524"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cart_user_info_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/cart_edit_text"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/ic_email_icon" />
+
+                <TextView
+                    android:id="@+id/cart_user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="rony@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/cart_order_summary_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_xl"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/text_hint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Pran Sorisar Oil"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="x6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="140"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Taka"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Pran Sorisar Oil"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="x4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="140"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Taka"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Pran Sorisar Oil"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="x2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="140"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Taka"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cart_voucher_code_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cart_voucher_code_hint_text"
+                    android:background="@drawable/cart_rounder_corners"
+                    android:padding="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:importantForAutofill="no" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cart_voucher_code_apply_btn"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rectangular_yellow"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/cart_apply_button_text"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/text_hint" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_text"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:text="   dcccdcdc "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="420"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Taka"
+                    android:textSize="@dimen/font_s"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:checkedButton="@+id/radioButtonCashOnDelivery">
+
+                <RadioButton
+                    android:id="@+id/radioButtonCashOnDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/cart_cash_on_delivery_text"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_xl" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOnlinePayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:padding="4.5dp"
+                    android:text="@string/cart_online_payment_text"
+                    android:textSize="@dimen/font_xl" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:layout_width="wrap_content"
+                android:background="@drawable/button_background_yellow"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_m"
+                android:text="@string/cart_confirm_order_text"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

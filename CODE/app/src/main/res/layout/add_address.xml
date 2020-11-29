@@ -1,0 +1,212 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        tools:context=".fragment.AddAddressFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_name"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="0.2"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_address_receiver_name"
+                android:hint="@string/profile_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="0.75"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_mobile"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="0.2"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_address_receiver_mobile"
+                android:hint="@string/profile_mobile"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="0.8"
+                android:importantForAutofill="no"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_city"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="0.35"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/add_address_city_selection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:theme="@style/spinnerTheme"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_area_selection"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="0.10"
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/add_address_area_selection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:theme="@style/spinnerTheme"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/add_address_area_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_red"
+            android:visibility="gone"
+            android:textSize="@dimen/font_l"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_address"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="0.15"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_address"
+                android:hint="@string/profile_address"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="0.70"
+                android:textSize="@dimen/font_m"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_primary_address"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_m"
+                android:layout_weight="4"
+                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/add_address_primary_address_switch"
+                android:layout_width="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:theme="@style/navbar_language_switch"
+                app:trackTint="@color/primary_address_switch_track_selector"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/add_address_save_button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/profile_save_button"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_xl"
+            android:background="@drawable/button_background_yellow"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>

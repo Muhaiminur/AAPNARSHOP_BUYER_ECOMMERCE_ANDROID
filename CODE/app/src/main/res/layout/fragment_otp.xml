@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".VIEW.FRAGMENT.OtpRegistrationFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/ic_aapnarshop_logo"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/otp_pin_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_xxxl"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <com.poovam.pinedittextfield.CirclePinField
+                android:id="@+id/otp_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSelectHandle="@drawable/text_handle"
+                android:textSize="@dimen/font_extreme"
+                app:circleRadius="15dp"
+                app:distanceInBetween="15dp"
+                app:fieldBgColor="@color/white"
+                app:fillerColor="@color/app_yellow"
+                app:fillerRadius="10dp"
+                app:highlightColor="@color/app_yellow"
+                app:highlightType="currentField"
+                app:noOfFields="5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/bg_drop_shadow" />
+
+            <Button
+                android:id="@+id/otp_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:text="@string/rating_submit_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_big"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                android:background="@drawable/yellow_background_capsul_shape_fill_settings"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>

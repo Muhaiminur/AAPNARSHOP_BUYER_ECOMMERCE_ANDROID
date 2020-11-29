@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text2"
+    style="?android:attr/spinnerItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dashboard_spinner_background"
+    android:gravity="center"
+    android:ellipsize="marquee"
+    android:textSize="@dimen/font_m"
+    android:minWidth="50dp"
+    android:textColor="@drawable/spinner_state_selector_dashboard"
+    android:textAlignment="inherit"/>

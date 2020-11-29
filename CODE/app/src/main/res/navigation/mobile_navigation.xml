@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.aapnarshop.buyer.fragment.DashboardFragment"
+        android:label="@string/text_navbar_home"
+        tools:layout="@layout/fragment_dashboard">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.aapnarshop.buyer.fragment.OrderFragment"
+        android:label="@string/text_navbar_order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.aapnarshop.buyer.fragment.NotificationFragment"
+        android:label="@string/text_navbar_notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.aapnarshop.buyer.fragment.ProfileFragment"
+        android:label="@string/text_navbar_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_add_address"
+        android:name="com.aapnarshop.buyer.fragment.AddAddressFragment"
+        android:label="@string/address_text"
+        tools:layout="@layout/add_address" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.aapnarshop.buyer.fragment.SettingsFragment"
+        android:label="@string/text_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/store_homepage"
+        android:name="com.aapnarshop.buyer.fragment.StoreHomepageFragment"
+        android:label="Store homepage"
+        tools:layout="@layout/fragment_store_homepage"/>
+
+    <fragment
+        android:id="@+id/product_details"
+        android:name="com.aapnarshop.buyer.fragment.ProductDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/product_details" />
+
+    <fragment
+    android:id="@+id/tablayout_popular_fragment"
+    android:name="com.aapnarshop.buyer.TabLayout_Fragment.PopularFragment"
+    android:label="Tablayout Popular Fragment"
+    tools:layout="@layout/tablayout_popular_fragment">
+        <action
+            android:id="@+id/action_Tablayout_popularFragment_to_productDetails_Fragment"
+            app:destination="@id/product_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tablayout_new_fragment"
+        android:name="com.aapnarshop.buyer.TabLayout_Fragment.NewFragment"
+        android:label="Tablayout New Fragment"
+        tools:layout="@layout/tablayout_popular_fragment" />
+
+    <fragment
+        android:id="@+id/cart_fragment"
+        android:name="com.aapnarshop.buyer.fragment.CartFragment"
+        android:label="Cart Fragment"
+        tools:layout="@layout/fragment_cart" />
+
+
+</navigation>
